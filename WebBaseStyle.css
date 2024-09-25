@@ -2,3 +2,20 @@ h1 {
     color: purple;
     text-shadow: 10px 10px 2px gray;
  }
+
+.marguee {
+    overflow: hidden;
+}
+
+.marguee img {
+    animation: scroll 10s linear  infinite;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(100%)
+    }
+    to {
+        transform: translateX(-100%)
+    }
+}
